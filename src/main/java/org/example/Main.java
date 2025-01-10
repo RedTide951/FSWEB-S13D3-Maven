@@ -1,34 +1,12 @@
 package org.example;
 
 public class Main {
-
-    class Person {
-        String firstName;
-        String lastName;
-        int age;
-        String job;
-        boolean isEmployed;
-        boolean isDeveloper;
-
-
-        public Person(String firstName,String lastName, int age) {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.age = age;
-        }
-
-        public Person(String firstName,String lastName, int age, String job, boolean isEmployed, boolean isDeveloper) {
-            this(firstName, lastName, age);
-            this.job = job;
-            this.isEmployed = isEmployed;
-            this.isDeveloper = isDeveloper;
-        }
-
-    }
-
-
-
     public static void main(String[] args) {
         System.out.println("Hello world");
+        Person person1 = new Person("John", "Doe", 20);
+        System.out.println("Firstname: " + person1.getFirstName());
+        System.out.println("LastName: " + person1.getLastName());
+        System.out.println("Age: " + person1.getAge());
+        System.out.println("Is Teen?: " + person1.isTeen());
     }
 }
